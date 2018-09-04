@@ -147,6 +147,7 @@ public:
    * a 32-bit RGB image of the framebuffer.
    */
   QImage grabFramebuffer();
+  QVTKOpenGLWindow* qVTKOpenGLWindowInternal;
 
 signals:
   /**
@@ -177,7 +178,6 @@ protected:
   bool EnableHiDPI = true;
 
 private:
-  QVTKOpenGLWindow* qVTKOpenGLWindowInternal;
 };
 
 #endif
